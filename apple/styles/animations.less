@@ -1,0 +1,15 @@
+	/* Handler */
+.animation(@name, @prop)
+{
+	animation: @arguments;-webkit-animation:@arguments;-moz-animation:@arguments;-o-animation:@arguments;
+}
+
+	/* showMenu - Fade In Menu */
+.showMenu
+{
+	0%{opacity:0; top:-20px;}
+	100%{opacity:1; top:0;}
+}
+@-webkit-keyframes showMenu{.showMenu;}
+@-moz-keyframes showMenu{.showMenu;}
+@-o-keyframes showMenu{.showMenu;}
