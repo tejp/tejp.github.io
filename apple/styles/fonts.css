@@ -1,4 +1,4 @@
-// Myriad Pro Light
+/* Myriad Pro Light */
 @font-face
 {
     font-family: 'MyriadProLight';
@@ -18,7 +18,7 @@
         font-style: normal;}
 }
 
-//Myriad Pro Regular
+/* Myriad Pro Regular */
 @font-face
 {
 	font-family: 'MyriadProRegular';
