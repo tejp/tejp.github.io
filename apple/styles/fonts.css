@@ -2,17 +2,35 @@
 {
     font-family: 'MyriadProLight';
     src:url('../fonts/MyriadProLight/MyriadProLight.eot');
-    src:url('../fonts/MyriadProLight/MyriadProLight.svg#MyriadProLight') format('svg'),
-    	url('../fonts/MyriadProLight/MyriadProLight.eot') format('embedded-opentype'),
+    src:url('../fonts/MyriadProLight/MyriadProLight.eot') format('embedded-opentype'),
         url('../fonts/MyriadProLight/MyriadProLight.woff') format('woff'),
-        url('../fonts/MyriadProLight/MyriadProLight.ttf') format('truetype');
+        url('../fonts/MyriadProLight/MyriadProLight.ttf') format('truetype'),
+        url('../fonts/MyriadProLight/MyriadProLight.svg#MyriadProLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face
 {
 	font-family: 'MyriadProRegular';
     src:url('../fonts/MyriadProRegular/MyriadProRegular.eot');
-    src:url('../fonts/MyriadProRegular/MyriadProRegular.svg#MyriadProLight') format('svg'),
-    	url('../fonts/MyriadProRegular/MyriadProRegular.eot') format('embedded-opentype'),
+    src:url('../fonts/MyriadProRegular/MyriadProRegular.eot') format('embedded-opentype'),
     	url('../fonts/MyriadProRegular/MyriadProRegular.woff') format('woff'),
-    	url('../fonts/MyriadProRegular/MyriadProRegular.ttf') format('truetype');
+    	url('../fonts/MyriadProRegular/MyriadProRegular.ttf') format('truetype'),
+        url('../fonts/MyriadProRegular/MyriadProRegular.svg#MyriadProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'MyriadProRegular';
+        url('../fonts/MyriadProRegular/MyriadProRegular.svg#MyriadProRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'MyriadProLight';
+        url('../fonts/MyriadProLight/MyriadProLight.svg#MyriadProLight') format('svg');
+        font-weight: normal;
+        font-style: normal;}
 }
