@@ -1,0 +1,120 @@
+/*
+	Egna metoder
+*/
+.static-size-ratio{
+	position: relative;
+	width: 100%; }
+.ssr-100:before{
+	content:'';
+	display: block;
+	padding-top: 100%; }
+.ssr-80:before{
+	content:'';
+	display: block;
+	padding-top: 80%; }
+.ssr-content{
+	position: absolute; 
+	top: 0; bottom: 0; right: 0; left: 0; }
+.center-child{
+	width: 100%;
+	text-align: center; }
+.center-child > *{
+	display: inline-block;
+	vertical-align: middle; }
+.center-child:before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle; }
+/*
+	Design
+*/
+body{ 
+	background-color: #e5e5e5;
+	font-size: 100%;
+	min-width: 280px; }
+.view-main{
+	margin-bottom: 1rem; }
+.view-main > div{
+	margin-top: 1rem;}
+
+
+.view-house{
+	height: 100%;
+	width: 100%;
+	background-color: #eaeaea;
+	border: 1px solid #777;
+	color: #999;
+	font-size: 0.8rem; }
+.view-house > div{
+	float:left;
+	position: relative;
+}
+.room-view [class*=room-]{
+	background-color: #eaeaea;
+	margin: 0 auto;
+}
+.view-house [class*=house-]:hover:after{
+	content: '';
+	position: absolute;
+	top: 0; bottom: 0; right: 0; left: 0;
+	cursor: pointer;
+	border: 0.2rem solid skyblue; }
+
+
+.options-list {
+	padding: 2px 2px 0 2px;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1; }
+.options-list-item {
+	padding: 0.5rem 1rem;
+	background-color: #e5e5e5;
+	margin-bottom: 1px;
+	color: #666;
+	font-size: .8rem; }
+.options-list-item:nth-child(odd){
+	background-color: #d4d4d4; }
+.options-list-item .switch{
+	display: inline-block;
+	float: right;
+}
+
+
+.house-wc{
+	width: 25.00000%;
+	height: 40.00000%;
+	border-right: 1px solid #777;
+	border-bottom: 1px solid #777; }
+.house-bedroom{
+	width: 35.00000%;
+	height: 40.00000%;
+	border-right: 1px solid #777;
+	border-bottom: 1px solid #777; }
+.house-kitchen{
+	width: 40.00000%;
+	height: 40.00000%;
+	border-bottom: 1px dashed #777; }
+.house-livingroom{
+	width: 80.00000%;
+	height: 60.00000%; }
+.balcony{
+	width: 20.00000%;
+	height: 45.00000%;
+	bottom: -15.00000%;
+	border-right: 1px dotted #777;
+	border-top: 1px dotted #777; }
+.room-view .room-wc{
+	width: 62.50000%;
+	height: 100%;
+	border: 1px solid #777; }
+.room-view .room-bedroom{
+	width: 87.50000%;
+	height: 100%;
+	border: 1px solid #777; }
+.room-view .room-kitchen{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #777; }
+.room-view .room-livingroom {
+	width: 100%;
+	height: 75.00000%; }

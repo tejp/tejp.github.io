@@ -1,0 +1,53 @@
+var mainContentPage = "view-settings";
+var settings = {
+	"currentPage": "view-house",
+	"view-house": {
+		"lock": {
+			"value": 1
+		},
+		"music": {
+			"value": 0
+		},
+		"light": {
+			"value": 1
+		},
+		"temperature": {
+			"value": 21
+		},
+		"temperature4": {
+			"value": 21
+		},
+		"temperature1": {
+			"value": 21
+		},
+		"temperature3": {
+			"value": 21
+		},
+		"temperature2": {
+			"value": 21
+		}
+	},
+	"view-livingroom": {
+		"light": {
+			"value": 1
+		}
+	},
+	"view-bedroom": {
+		"light": {
+			"value": 1
+		},
+		"bed-vibration": {
+			"value": 1
+		}
+	},
+	"view-kitchen": {
+		"light": {
+			"value": 1
+		}
+	},
+	"view-wc": {
+		"light": {
+			"value": 0
+		}
+	}
+};
