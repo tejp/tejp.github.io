@@ -27,6 +27,11 @@
 	height: 100%;
 	vertical-align: middle; }
 /*
+	Fixes
+*/
+div.switch.tiny{
+	height: 1.5rem; }
+/*
 	Design
 */
 body{ 
@@ -71,12 +76,14 @@ body{
 	background-color: #e5e5e5;
 	margin-bottom: 1px;
 	color: #666;
-	font-size: .8rem; }
+	font-size: .8rem;
+	text-align: left; }
 .options-list-item:nth-child(odd){
 	background-color: #d4d4d4; }
-.options-list-item .switch{
-	display: inline-block;
+.options-list-item .switch {
+	position: relative;
 	float: right;
+	height: 100%;
 }
 
 

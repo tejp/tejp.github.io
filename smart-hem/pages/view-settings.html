@@ -5,12 +5,17 @@ function loadSettings(){
 
 function loadOptions(){
 	$.each(settings[settings.currentPage], function(k, v){
-		$("#options-list").append(
-			"<li class='options-list-item'>" + k + 
-			"<div class='switch tiny'>" +
-				"<input id='" + settings.currentPage + "-" + k + "' type='checkbox' checked>" +
-				"<label for='" + settings.currentPage + "-" + k + "'></label>" + 
-				"</div></li>");
+		var input = $('<input />', {
+					'type': 'checkbox',
+					'id': settings.currentPage + "-" + k,
+					'checked': v.value === 1 });
+		var label = $('<label />', {
+					'for': settings.currentPage + "-" + k });
+		var li = $('<li />', {
+					'class': 'options-list-item' });
+		var div = $('<div />', {
+					'class': 'switch tiny' });
+		li.append(k, div.append(input, label)).appendTo('#options-list');
 	});
 }
 </script>
