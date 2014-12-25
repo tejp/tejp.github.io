@@ -1,6 +1,4 @@
-var mainContentPage = "view-settings";
 var settings = {
-	"currentPage": "view-house",
 	"view-house": {
 		"lock": {
 			"value": 1
