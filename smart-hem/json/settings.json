@@ -5,7 +5,7 @@ var settings = {
 		"lock": {
 			"value": 1
 		},
-		"music": {
+		"alarm": {
 			"value": 0
 		},
 		"light": {
@@ -14,26 +14,20 @@ var settings = {
 		"temperature": {
 			"value": 21
 		},
-		"temperature4": {
-			"value": 21
+		"cleaning-robot": {
+			"value": 1
 		},
-		"temperature1": {
-			"value": 21
-		},
-		"temperature3": {
-			"value": 21
-		},
-		"temperature2": {
-			"value": 21
+		"music": {
+			"value": 0
 		}
 	},
 	"view-livingroom": {
-		"light": {
+		"lightl": {
 			"value": 1
 		}
 	},
 	"view-bedroom": {
-		"light": {
+		"lightb": {
 			"value": 1
 		},
 		"bed-vibration": {
@@ -41,12 +35,12 @@ var settings = {
 		}
 	},
 	"view-kitchen": {
-		"light": {
+		"lightk": {
 			"value": 1
 		}
 	},
 	"view-wc": {
-		"light": {
+		"lightwc": {
 			"value": 0
 		}
 	}

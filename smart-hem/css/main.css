@@ -4,11 +4,11 @@
 .static-size-ratio{
 	position: relative;
 	width: 100%; }
-.ssr-100:before{
+.ssr-100:after{
 	content:'';
 	display: block;
 	padding-top: 100%; }
-.ssr-80:before{
+.ssr-80:after{
 	content:'';
 	display: block;
 	padding-top: 80%; }
@@ -21,7 +21,7 @@
 .center-child > *{
 	display: inline-block;
 	vertical-align: middle; }
-.center-child:before{
+.center-child:after{
 	content: '';
 	display: inline-block;
 	height: 100%;
@@ -35,7 +35,7 @@ div.switch.tiny{
 	Design
 */
 body{ 
-	background-color: #e5e5e5;
+	background-color: #e5e5e5; /*#e5e5e5*/
 	font-size: 100%;
 	min-width: 280px; }
 .view-main{
@@ -47,19 +47,14 @@ body{
 .view-house{
 	height: 100%;
 	width: 100%;
-	background-color: #eaeaea;
+	background-color: #f1f1f1; /*eaeaea*/
 	border: 1px solid #777;
-	color: #999;
+	color: #666;
 	font-size: 0.8rem; }
 .view-house > div{
 	float:left;
-	position: relative;
-}
-.room-view [class*=room-]{
-	background-color: #eaeaea;
-	margin: 0 auto;
-}
-.view-house [class*=house-]:hover:after{
+	position: relative; }
+.view-house [class*=house-]:not([class*=balcony]):hover:before{
 	content: '';
 	position: absolute;
 	top: 0; bottom: 0; right: 0; left: 0;
@@ -68,30 +63,32 @@ body{
 
 
 .options-list {
-	padding: 2px 2px 0 2px;
-	border: 1px solid #ccc;
-	background-color: #f1f1f1; }
+	padding: 1px 1px 0 1px;
+	border: 1px solid #999;
+	background-color: #f1f1f1; } /*f1f1f1*/
 .options-list-item {
 	padding: 0.5rem 1rem;
-	background-color: #e5e5e5;
+	background-color: #e5e5e5; /*#e5e5e5*/
 	margin-bottom: 1px;
 	color: #666;
 	font-size: .8rem;
 	text-align: left; }
 .options-list-item:nth-child(odd){
-	background-color: #d4d4d4; }
+	background-color: #d4d4d4; /*d4d4d4*/ }
+.options-list-item:first-letter{
+	text-transform: uppercase; }
 .options-list-item .switch {
 	position: relative;
 	float: right;
-	height: 100%;
-}
+	height: 100%; }
 
 
 .house-wc{
 	width: 25.00000%;
 	height: 40.00000%;
 	border-right: 1px solid #777;
-	border-bottom: 1px solid #777; }
+	border-bottom: 1px solid #777;
+	text-transform: uppercase; }
 .house-bedroom{
 	width: 35.00000%;
 	height: 40.00000%;
@@ -104,24 +101,31 @@ body{
 .house-livingroom{
 	width: 80.00000%;
 	height: 60.00000%; }
-.balcony{
+.house-balcony{
 	width: 20.00000%;
 	height: 45.00000%;
 	bottom: -15.00000%;
 	border-right: 1px dotted #777;
 	border-top: 1px dotted #777; }
-.room-view .room-wc{
+div [class*=room-] {
+	margin: 0 auto;
+	background-color: #eaeaea; }
+.room-wc{
 	width: 62.50000%;
 	height: 100%;
-	border: 1px solid #777; }
-.room-view .room-bedroom{
+	border: 1px solid #777;
+	text-transform: uppercase; }
+.room-bedroom{
 	width: 87.50000%;
 	height: 100%;
 	border: 1px solid #777; }
-.room-view .room-kitchen{
+.room-kitchen{
 	width: 100%;
 	height: 100%;
 	border: 1px solid #777; }
-.room-view .room-livingroom {
+.room-livingroom{
 	width: 100%;
-	height: 75.00000%; }
+	height: 75.00000%;
+	border: 1px solid #777; }
+[class*=house-]:first-letter, [class*=room-]:first-letter{
+	text-transform: uppercase; }

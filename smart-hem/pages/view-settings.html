@@ -1,25 +1,3 @@
-<script>
-function loadSettings(){
-	$("#house-load").load("pages/parts.html #" + settings.currentPage);
-}
-
-function loadOptions(){
-	$.each(settings[settings.currentPage], function(k, v){
-		var input = $('<input />', {
-					'type': 'checkbox',
-					'id': settings.currentPage + "-" + k,
-					'checked': v.value === 1 });
-		var label = $('<label />', {
-					'for': settings.currentPage + "-" + k });
-		var li = $('<li />', {
-					'class': 'options-list-item' });
-		var div = $('<div />', {
-					'class': 'switch tiny' });
-		li.append(k, div.append(input, label)).appendTo('#options-list');
-	});
-}
-</script>
-
 <div class="row view-main">
 	<div id="house-load" class="small-12 medium-7 column"></div>
 	<div class="small-12 medium-5 column">
@@ -27,4 +5,4 @@ function loadOptions(){
 	</div>
 </div>
 
-<script>loadSettings();loadOptions();</script>
+<script>loadNavigation();loadOptions();</script>

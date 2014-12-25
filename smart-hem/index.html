@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
-	<title>Smart Hem!</title>
+	<title>Sm@rt Hem</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css"/>
@@ -17,6 +17,15 @@
 	<script src="js/main.js"></script>
 
 	<script src="js/vendor/modernizr.js"></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-57988065-1', 'auto');
+	ga('send', 'pageview');
+	</script>
 </head>
 <body>
 <div class="fixed contain-to-grid">
@@ -24,7 +33,7 @@
 		<ul class="title-area">
 			<li class="name">
 				<h1><a href="javascript:void(0);" onclick="
-				settings.currentPage = 'view-house'; mainContentPage = 'view-settings'; loadMain()"><i class="fi-home"></i></a></h1>
+				loadMain('view-house')"><i class="fi-home"></i></a></h1>
 			</li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			<!--<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>-->
@@ -51,32 +60,25 @@
 	</nav>
 </div>
 
-<div id="main-content"></div>
+<div id="view"></div>
+<script>loadMain("view-house");</script>
 
+
+<!--<div id="list-contents" class="reveal-modal" data-reveal>
+	<p>Mjölk 1.5l, 2014-12-23</p>
+	<p>Falukorv 400g, 2014-12-31</p>
+	<p>Hushållsmedwurst 3 skivor, 2015-03-04</p>
+	<p>Smör 300g, 2016-02-21</p>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="list-recipe" class="reveal-modal" data-reveal>
+	Du har inte tillräckligt med råvaror för att göra något.
+	<a class="close-reveal-modal">&#215;</a>
+</div>-->
+
+<script src="js/foundation.min.js"></script>
 <script>
-function loadMain(){
-	$("#main-content").load("pages/" + mainContentPage + ".html");
-}
-
-loadMain();
+	$(document).foundation();
 </script>
-
-
-	<!--<div id="list-contents" class="reveal-modal" data-reveal>
-		<p>Mjölk 1.5l, 2014-12-23</p>
-		<p>Falukorv 400g, 2014-12-31</p>
-		<p>Hushållsmedwurst 3 skivor, 2015-03-04</p>
-		<p>Smör 300g, 2016-02-21</p>
-		<a class="close-reveal-modal">&#215;</a>
-	</div>
-	<div id="list-recipe" class="reveal-modal" data-reveal>
-		Du har inte tillräckligt med råvaror för att göra något.
-		<a class="close-reveal-modal">&#215;</a>
-	</div>-->
-
-	<script src="js/foundation.min.js"></script>
-	<script>
-		$(document).foundation();
-	</script>
 </body>
 </html>
