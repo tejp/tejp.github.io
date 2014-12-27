@@ -8,21 +8,21 @@ var appSettings = {
 			'value': 0,
 			'type': 'switch'
 		},
-		'light': {
-			'value': 1,
+		'lights-off': {
+			'value': 0,
 			'type': 'switch'
 		},
 		'temperature': {
 			'value': '21',
 			'type': 'slider',
 			'start': 15,
-			'end': 25
+			'end': 27
 		},
 		'cleaning-robot': {
 			'value': 1,
 			'type': 'switch'
 		},
-		'music': {
+		'music-off': {
 			'value': 0,
 			'type': 'switch'
 		}
@@ -31,6 +31,22 @@ var appSettings = {
 		'light': {
 			'value': 1,
 			'type': 'switch'
+		},
+		'temperature': {
+			'value': '23',
+			'type': 'slider',
+			'start': 15,
+			'end': 27
+		},
+		'google': {
+			'value': '45',
+			'type': 'slider',
+			'start': 10,
+			'end': 99
+		},
+		'wall color': {
+			'value': ['#fff', '#000'],
+			'type': 'color-picker'
 		}
 	},
 	'view-bedroom': {

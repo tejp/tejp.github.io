@@ -18,10 +18,10 @@
 .center-child{
 	width: 100%;
 	text-align: center; }
-.center-child > *{
+.center-child > *, .center-child-vert > *{
 	display: inline-block;
 	vertical-align: middle; }
-.center-child:after{
+.center-child:after, .center-child-vert:after{
 	content: '';
 	display: inline-block;
 	height: 100%;
@@ -29,6 +29,12 @@
 /*
 	Fixes
 */
+.fixed.contain-to-grid, .fixed.contain-to-grid > nav{
+	background: none; }
+.range-slider{
+	margin-top: 8px;
+	margin-bottom: 7px;
+}
 /*
 	Design
 */
@@ -41,7 +47,6 @@ body{
 .view-main > div{
 	margin-top: 1rem;}
 
-
 .view-house{
 	height: 100%;
 	width: 100%;
@@ -49,16 +54,14 @@ body{
 	border: 1px solid #91B6C4;
 	color: #666;
 	font-size: 0.8rem; }
-.view-house > div{
-	float:left;
-	position: relative; }
-.view-house [class*=house-]:not([class*=balcony]):hover:before{
+.view-house > div{ position: relative; }
+.room-hover:hover:before, .room-hover:focus:before{
 	content: '';
 	position: absolute;
-	top: 0; bottom: 0; right: 0; left: 0;
+	top: 0px; bottom: 0px; right: 0px; left: 0px;
+	z-index: 1;
 	cursor: pointer;
-	border: 0.2rem solid #008cba; }
-
+	outline: 4px solid #008cba; }
 
 .options-list {
 	padding: 1px 1px 0px 1px;
@@ -66,17 +69,12 @@ body{
 .options-list-item {
 	padding: 0.5rem 1rem;
 	background-color: #EDF6FA; /*#e5e5e5*/
-	border-bottom: 1px solid #CADCE3;
+	border-bottom: 1px solid #CADCE3; }
+.options-list-item-text{
 	color: #666;
-	font-size: .8rem;
-	text-align: left; }
-.options-list-item:first-letter{
+	font-size: 0.9rem; }
+.options-list-item-text:first-letter{
 	text-transform: uppercase; }
-.options-list-item .switch {
-	position: relative;
-	float: right;
-	height: 100%; }
-
 
 .house-wc{
 	width: 25.00000%;
@@ -104,6 +102,7 @@ body{
 	border-top: 1px dotted #91B6C4; }
 div[class*=room-] {
 	margin: 0 auto;
+	color: #666;
 	background-color: #EDF6FA; }
 .room-wc{
 	width: 62.50000%;

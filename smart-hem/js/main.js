@@ -1,5 +1,5 @@
 function navigateMain (page) {
-	loadMain(page); $(document).foundation('reflow'); }
+	loadMain(page); $(document).foundation('reflow'); $(document).foundation(); }
 
 function loadMain (page) {
 	$('#view').empty();
@@ -30,12 +30,13 @@ function loadNavigation (page) {
 function loadHouse () {
 	var ssr = $('<div />', { 'class': 'static-size-ratio ssr-80'});
 	var ssrC = $('<div />', { 'class': 'ssr-content'});
-	var house = $('<div />', { 'class': 'view-house'});
+	var house = $('<div />', { 'class': 'view-house clear-fix'});
 	var houseFill = ['wc', 'bedroom', 'kitchen', 'balcony', 'livingroom'];
 	$.each(houseFill, function (i, o) {
-		var room = $('<div />', { 'class': 'center-child house-' + o });
+		var room = $('<div />', { 'class': 'left center-child house-' + o });
 
 		if(o !== 'balcony'){
+			room.attr('tabindex', '0').addClass('room-hover');
 			room.click(function(){ navigateMain('view-' + o); });
 		}
 		room.append(o).appendTo(house);
@@ -45,15 +46,17 @@ function loadHouse () {
 }
 
 function loadOptions (page) {
-	var ul = $('<ul />', { 'class': 'no-bullet options-list'});
+	var ul = $('<div />', { 'class': 'options-list'});
 
 	$.each(appSettings[page], function(i, o){
-		var li = $('<li />', { 'class': 'options-list-item' });
-		li.append(i);
+		var li = $('<div />', { 'class': 'options-list-item' });
 
 		switch (o.type) {
 		case 'switch':
-			var div = $('<div />', { 'class': 'switch tiny' });
+			var div = $('<div />', { 'class': 'switch tiny right' });
+			var text = $('<div />', {
+				'class': 'options-list-item-text', 
+				'style': 'display: inline-block;' }).text(i);
 			var input = $('<input />', {
 				'type': 'checkbox',
 				'id': i,
@@ -61,10 +64,11 @@ function loadOptions (page) {
 			}).click(function () {
 				o.value = +(this.checked);
 			});
-			var label = $('<label />', { 'for': i });
-			li.append(div.append(input, label)).appendTo(ul);
+			var label = $('<label />', { 'for': i, 'tabindex': '0' });
+			li.append(text, div.append(input, label)).appendTo(ul);
 			break;
 		case 'slider':
+			var divC = $('<div />', { 'style': 'overflow: hidden;' });
 			var div = $('<div />', {
 				'id': 'slider-' + i,
 				'class': 'range-slider',
@@ -77,13 +81,24 @@ function loadOptions (page) {
 			var span1 = $('<span />', {
 				'class': 'range-slider-handle',
 				'role': 'slider',
-				'tabindex': '0'
-			});
+				'tabindex': '0' });
 			var span2 = $('<span />', { 'class': 'range-slider-active-segment' });
-			var span3 = $('<span />', { 'id': i });
 			var input = $('<input>', { 'type': 'hidden' });
-			li.append(' ', span3, '&deg;c', div.append(span1, span2, input)).appendTo(ul);
+			var label = $('<div />', { 
+				'class': 'center-child-vert left', 
+				'style': 'height: 31px;'});
+			var text = $('<div />', { 
+				'class': 'options-list-item-text',
+				'style': 'padding-right: 1rem;' });
+			var value = $('<span />', { 'id': i });
+			text.append(i, ' ', value)
+			if (i === 'temperature') { text.append('&deg;c'); }
+			li.append(label.append(text), divC.append(div.append(span1, span2, input))).appendTo(ul);
 			break;
+		case 'color-picker':
+			var div = $('<div />', {
+				'class': 'boobies'
+			});
 		}
 	});
 	return ul;
