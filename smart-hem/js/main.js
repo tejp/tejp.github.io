@@ -9,8 +9,8 @@ function loadMain (page) {
 	divOpt.append(loadOptions(page));
 	divRow.append(divNav,divOpt).appendTo('#view');
 	if (page === 'view-livingroom') {
-		loadSpectrum(); 
-		paint(appSettings['view-livingroom']['wall-color']);
+		var o = appSettings[page]['wall-color'];
+		o.setVal();
 	}
 }
 
@@ -21,8 +21,8 @@ function loadNavigation (page) {
 		return loadHouse();
 		break;
 	default:
-		var ssr = $('<div />', { 'class': 'static-size-ratio ssr-80'});
-		var ssrC = $('<div />', { 'class': 'ssr-content center-child'});
+		var ssr = $('<div />', { 'class': 'static-ratio-80'});
+		var ssrC = $('<div />', { 'class': 'static-ratio-content center-child'});
 		var room = $('<div />', { 'class': 'center-child room-' + o });
 		if(o === 'livingroom'){
 			var wall = $('<div />', {
@@ -37,8 +37,8 @@ function loadNavigation (page) {
 }
 
 function loadHouse () {
-	var ssr = $('<div />', { 'class': 'static-size-ratio ssr-80'});
-	var ssrC = $('<div />', { 'class': 'ssr-content'});
+	var ssr = $('<div />', { 'class': 'static-ratio-80'});
+	var ssrC = $('<div />', { 'class': 'static-ratio-content'});
 	var house = $('<div />', { 'class': 'view-house clear-fix'});
 	var houseFill = ['wc', 'bedroom', 'kitchen', 'balcony', 'livingroom'];
 	$.each(houseFill, function (i, o) {
@@ -63,7 +63,7 @@ function loadHouse () {
 }
 
 function loadOptions (page) {
-	var ul = $('<div />', { 'class': 'options-list'});
+	var ul = $('<div />', { 'class': 'options-list' });
 
 	$.each(appSettings[page], function(i, o){
 		var li;
@@ -141,38 +141,28 @@ function createColorPickerOptions (i, o) {
 		'checked': o.value === 1 
 	}).click(function () {
 		o.value = +(this.checked);
-		paint(o);
-		loadSpectrum();
+		o.setVal();
 	});
 	var label = $('<label />', { 'for': i, 'tabindex': '0' });
-	var switchPart = $('<div />').append(div.append(input, label), text);
-	var span = $('<span />', { 'class': '', 'style': '' });
+	div.append(input, label);
+	var spectrumButton = $('<div />', { 
+		'class': 'left',
+		'style': 'margin-right:.5rem; margin-top:.5rem;' });
 	var spectrum = $('<input>', { 'type': 'hidden', 'id': 'spectrum' });
-	return $('<div />').append(switchPart, span.append(spectrum));
+	var spectrumPreview = $('<div />', {
+		'class': 'float-fix static-ratio-60',
+		'id': 'spectrumPreview',
+		'style': 'margin-top: .5rem; border:1px solid #CADCE3'});
+	return $('<div />').append(div, text, spectrumButton.append(spectrum), spectrumPreview);
 }
 
-function loadSpectrum () {
-	var o = appSettings['view-livingroom']['wall-color'];
-	if(o.value === 1){
-		$('#spectrum').spectrum({ 
-			color: o.color,
-			className: "full-spectrum",
-			change: function(color) {
-			    o.color = color.toHexString();
-			    paint(o);
-			}
-		});
-	} else if (o.value === 0) {
-		$('.full-spectrum').css('display', 'none');
-	}
-}
-
-function paint (o) {
-	if (o.value === 1){
-		$('#wall-color-style').empty().html(
-			'.wall-color-style{outline:3px solid ' + o.color + ';}'
-		);
-	} else {
-		$('#wall-color-style').empty();
-	}
+function loadSpectrum (o) {
+	$('#spectrum').spectrum({ 
+		color: o.color,
+		className: "full-spectrum",
+		change: function(color) {
+			o.color = color.toHexString();
+			o.setVal();
+		}
+	});
 }

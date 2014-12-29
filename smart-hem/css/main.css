@@ -1,17 +1,21 @@
 /*
 	Egna metoder
 */
-.static-size-ratio{
+[class*=static-ratio-]{
 	position: relative !important; }
-.ssr-100:after{
+.static-ratio-100:after{
 	content: ' ';
 	display: table;
 	padding-top: 100%; }
-.ssr-80:after{
+.static-ratio-80:after{
 	content: ' ';
 	display: table;
 	padding-top: 80%; }
-.ssr-content{
+.static-ratio-60:after{
+	content: ' ';
+	display: table;
+	padding-top: 60%; }
+.static-ratio-content{
 	position: absolute !important; 
 	top: 0; bottom: 0; right: 0; left: 0; }
 .center-child, .center-child-hor{
@@ -24,9 +28,6 @@
 	height: 100%;
 	vertical-align: middle; }
 .float-fix { overflow: hidden !important; } /* after floated element */
-.height-fix {
-	display: inline-block !important!;
-	height: 100%; /* must have height */ }
 .left { float: left !important; }
 .right { float: right !important; }
 .clear-fix:before, .clear-fix:after {

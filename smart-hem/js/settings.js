@@ -50,11 +50,25 @@ var appSettings = {
 			'end': 100
 		},
 		'wall-color': {
-			'id': 'wall color',
+			'id': 'Cozy wall color',
 			'value': 0,
 			'color': '#f0f',
 			'type': 'color-picker',
-			'colors': [['#fff'], ['#f00'], ['#0f0'], ['#00f'], ['#000']]
+			'colors': [['#fff'], ['#f00'], ['#0f0'], ['#00f'], ['#000']],
+			setVal: function () {
+				if (this.value === 1){
+					$('#spectrumPreview').css('display', 'block');
+					$('#wall-color-style').empty().html(
+						'.wall-color-style{outline:3px solid ' + this.color +
+						';}#spectrumPreview:before{top:1px;bottom:1px;right:1px;left:1px;position:absolute;content:"";display:block;background:' + this.color + ';'
+					);
+					loadSpectrum(this);
+				} else {
+					$('#wall-color-style').empty();
+					$('#spectrumPreview').css('display', 'none');
+					$('.full-spectrum').css('display', 'none');
+				}
+			}
 		}
 	},
 	'view-bedroom': {
