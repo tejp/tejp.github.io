@@ -11,7 +11,7 @@ var appSettings = {
 			'type': 'switch'
 		},
 		'light': {
-			'id': 'switch lights off',
+			'id': 'lights off',
 			'value': 0,
 			'type': 'switch'
 		},
@@ -29,12 +29,17 @@ var appSettings = {
 			'type': 'switch'
 		},
 		'music': {
-			'id': 'Music off',
+			'id': 'music off',
 			'value': 0,
 			'type': 'switch'
 		}
 	},
 	'view-livingroom': {
+		'music': {
+			'id': 'music',
+			'value': 0,
+			'type': 'switch'
+		},
 		'light': {
 			'id': 'light dimmer',
 			'value': 12,
@@ -79,6 +84,20 @@ var appSettings = {
 			'start': 0,
 			'end': 25
 		},
+		'temperature': {
+			'id': 'temperature',
+			'type': 'slider',
+			'value': 23,
+			'start': 15,
+			'end': 27
+		},
+		'ac': {
+			'id': 'air condition',
+			'type': 'slider',
+			'value': 0,
+			'start': 0,
+			'end': 10
+		},
 		'bedvibe': {
 			'id': 'bed vibrations',
 			'value': 1,
@@ -95,6 +114,11 @@ var appSettings = {
 	'view-wc': {
 		'light': {
 			'id': 'light',
+			'type': 'switch',
+			'value': 0
+		},
+		'eshower': {
+			'id': 'electric shower',
 			'type': 'switch',
 			'value': 0
 		},
