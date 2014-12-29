@@ -2,39 +2,47 @@
 	Egna metoder
 */
 .static-size-ratio{
-	position: relative;
-	width: 100%; }
+	position: relative !important; }
 .ssr-100:after{
-	content:'';
-	display: block;
+	content: ' ';
+	display: table;
 	padding-top: 100%; }
 .ssr-80:after{
-	content:'';
-	display: block;
+	content: ' ';
+	display: table;
 	padding-top: 80%; }
 .ssr-content{
-	position: absolute; 
+	position: absolute !important; 
 	top: 0; bottom: 0; right: 0; left: 0; }
-.center-child{
-	width: 100%;
+.center-child, .center-child-hor{
 	text-align: center; }
-.center-child > *, .center-child-vert > *{
-	display: inline-block;
-	vertical-align: middle; }
+.center-child > *, .center-child-vert > *, .center-child-hor > *{
+	display: inline-block !important; }
 .center-child:after, .center-child-vert:after{
-	content: '';
+	content: ' ';
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle; }
+.float-fix { overflow: hidden !important; } /* after floated element */
+.height-fix {
+	display: inline-block !important!;
+	height: 100%; /* must have height */ }
+.left { float: left !important; }
+.right { float: right !important; }
+.clear-fix:before, .clear-fix:after {
+	content: ' ';
+	display: table; }
+.clear-fix:after { clear: both; }
 /*
 	Fixes
 */
 .fixed.contain-to-grid, .fixed.contain-to-grid > nav{
-	background: none; }
+	background: #89B4C4; }
 .range-slider{
 	margin-top: 8px;
-	margin-bottom: 7px;
-}
+	margin-bottom: 2px; }
+.switch.tiny{
+	height: 24px; }
 /*
 	Design
 */
@@ -48,15 +56,14 @@ body{
 	margin-top: 1rem;}
 
 .view-house{
-	height: 100%;
-	width: 100%;
+	height: 100.00000%;
 	background-color: #EDF6FA; /*eaeaea*/
 	border: 1px solid #91B6C4;
 	color: #666;
 	font-size: 0.8rem; }
-.view-house > div{ position: relative; }
-.room-hover:hover:before, .room-hover:focus:before{
-	content: '';
+.nav-hover:hover{ cursor: pointer; }
+.nav-hover:hover:before, .nav-hover:focus:before{
+	content: ' ';
 	position: absolute;
 	top: 0px; bottom: 0px; right: 0px; left: 0px;
 	z-index: 1;
@@ -76,6 +83,8 @@ body{
 .options-list-item-text:first-letter{
 	text-transform: uppercase; }
 
+.view-house div[class*=house-]{
+	position: relative; }
 .house-wc{
 	width: 25.00000%;
 	height: 40.00000%;
@@ -101,25 +110,22 @@ body{
 	border-right: 1px dotted #91B6C4;
 	border-top: 1px dotted #91B6C4; }
 div[class*=room-] {
-	margin: 0 auto;
 	color: #666;
-	background-color: #EDF6FA; }
+	position: relative;
+	background-color: #EDF6FA;
+	border: 1px solid #91B6C4; }
 .room-wc{
 	width: 62.50000%;
 	height: 100%;
-	border: 1px solid #91B6C4;
 	text-transform: uppercase; }
 .room-bedroom{
 	width: 87.50000%;
-	height: 100%;
-	border: 1px solid #91B6C4; }
+	height: 100%; }
 .room-kitchen{
 	width: 100%;
-	height: 100%;
-	border: 1px solid #91B6C4; }
+	height: 100%; }
 .room-livingroom{
 	width: 100%;
-	height: 75.00000%;
-	border: 1px solid #91B6C4; }
+	height: 75.00000%; }
 [class*=house-]:first-letter, [class*=room-]:first-letter{
 	text-transform: uppercase; }

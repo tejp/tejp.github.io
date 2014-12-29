@@ -1,74 +1,95 @@
 var appSettings = {
 	'view-house': {
 		'lock': {
+			'id': 'lock',
 			'value': 1,
 			'type': 'switch'
 		},
 		'alarm': {
+			'id': 'alarm',
 			'value': 0,
 			'type': 'switch'
 		},
-		'lights-off': {
+		'light': {
+			'id': 'switch lights off',
 			'value': 0,
 			'type': 'switch'
 		},
 		'temperature': {
-			'value': '21',
+			'id': 'temperature',
 			'type': 'slider',
+			'suffix': '&deg;c',
+			'value': 21,
 			'start': 15,
 			'end': 27
 		},
-		'cleaning-robot': {
+		'cleaning': {
+			'id': 'Cleaning robot',
 			'value': 1,
 			'type': 'switch'
 		},
-		'music-off': {
+		'music': {
+			'id': 'Music off',
 			'value': 0,
 			'type': 'switch'
 		}
 	},
 	'view-livingroom': {
 		'light': {
-			'value': 1,
-			'type': 'switch'
-		},
-		'temperature': {
-			'value': '23',
+			'id': 'light dimmer',
+			'value': 12,
 			'type': 'slider',
-			'start': 15,
-			'end': 27
+			'start': 0,
+			'end': 25
 		},
-		'google': {
-			'value': '45',
+		'fireplace': {
+			'id': 'Fireplace intensity level',
+			'value': 80,
 			'type': 'slider',
-			'start': 10,
-			'end': 99
+			'start': 0,
+			'end': 100
 		},
-		'wall color': {
-			'value': ['#fff', '#000'],
-			'type': 'color-picker'
+		'wall-color': {
+			'id': 'wall color',
+			'value': 0,
+			'color': '#f0f',
+			'type': 'color-picker',
+			'colors': [['#fff'], ['#f00'], ['#0f0'], ['#00f'], ['#000']]
 		}
 	},
 	'view-bedroom': {
 		'light': {
-			'value': 1,
-			'type': 'switch'
+			'id': 'light dimmer',
+			'value': 0,
+			'type': 'slider',
+			'start': 0,
+			'end': 25
 		},
-		'bed-vibration': {
+		'bedvibe': {
+			'id': 'bed vibrations',
 			'value': 1,
 			'type': 'switch'
 		}
 	},
 	'view-kitchen': {
 		'light': {
-			'value': 1,
-			'type': 'switch'
+			'id': 'light',
+			'type': 'switch',
+			'value': 1
 		}
 	},
 	'view-wc': {
 		'light': {
+			'id': 'light',
+			'type': 'switch',
+			'value': 0
+		},
+		'heated-floor': {
+			'id': 'heated floor',
+			'type': 'slider',
 			'value': 0,
-			'type': 'switch'
+			'start': 0,
+			'end': 5
 		}
 	}
 };
