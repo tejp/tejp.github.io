@@ -57,7 +57,7 @@ var appSettings = {
 		'wall-color': {
 			'id': 'Cozy wall color',
 			'value': 0,
-			'color': '#f0f',
+			'color': '#7EB299',
 			'type': 'color-picker',
 			'colors': [['#fff'], ['#f00'], ['#0f0'], ['#00f'], ['#000']],
 			setVal: function () {
@@ -109,6 +109,28 @@ var appSettings = {
 			'id': 'light',
 			'type': 'switch',
 			'value': 1
+		},
+		'fridge': {
+			'id': 'smart fridge',
+			'type': 'smart-device',
+			'settings': {
+				'list-contents': {
+					'id': 'list contents',
+					'type': 'modal-button',
+					'text': '<p>Mjölk 1.5l, 2014-12-23</p>'+
+						'<p>Falukorv 400g, 2014-12-31</p>'+
+						'<p>Hushållsmedwurst 3 skivor, 2015-03-04</p>'+
+						'<p>Smör 300g, 2016-02-21</p>'
+				},
+				'get-recipes': {
+					'id': 'get recipes',
+					'type': 'modal-button',
+					'text': '<h4><p>You have an insufficent number of ingredients.</p></h4>'+
+						'<h5><p>Suggestions:<p></h5>'+
+						'<p>1. Sandwiches (missing ingredients: bread)</p>'+
+						'<p>2. Korvstroganoff (missing ingredients: onion, tomato paste, cream, rice)'
+				}
+			}
 		}
 	},
 	'view-wc': {

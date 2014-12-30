@@ -44,6 +44,9 @@
 	margin-bottom: 2px; }
 .switch.tiny{
 	height: 24px; }
+.user-name-menu{ background-color: #79AABA !important; }
+.user-name-menu:hover, .user-name-menu:focus{
+	background-color: #222 !important; }
 /*
 	Design
 */

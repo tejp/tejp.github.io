@@ -66,7 +66,7 @@ function loadOptions (page) {
 	var ul = $('<div />', { 'class': 'options-list' });
 
 	$.each(appSettings[page], function(i, o){
-		var li;
+		var li = $('<div />');
 		switch (o.type) {
 		case 'switch':
 			li = createSwitchOption(i, o);
@@ -76,6 +76,9 @@ function loadOptions (page) {
 			break;
 		case 'color-picker':
 			li = createColorPickerOptions(i, o);
+			break;
+		case 'smart-device':
+			li = createSmartDeviceOption(i, o);
 			break;
 		}
 		li.addClass('options-list-item clear-fix').appendTo(ul);
@@ -165,4 +168,28 @@ function loadSpectrum (o) {
 			o.setVal();
 		}
 	});
+}
+
+function createSmartDeviceOption (i, o) {
+	var text = $('<div />', { 'class': 'options-list-item-text' }).text(o.id + ':');
+	var div = $('<div />', { 'style': 'margin-top:.5rem;' } );
+	var count = true;
+	$.each(o.settings, function (index, object) {
+		if(object.type === 'modal-button') {
+			var a = $('<a />', { 
+				'href': '#',
+				'data-reveal-id': index,
+				'class': 'button',
+				'style': 'max-width: 48%; min-width: 34%; font-size:.8rem;'
+			}).text(object.id).css('float', count?'left':'right');
+			var divModal = $('<div />', {
+				'class': 'reveal-modal',
+				'id': index,
+				'data-reveal': ''}).html(object['text']);
+			var close = $('<a />', { 'class': 'close-reveal-modal'}).html('&#215;');
+			div.append(a, divModal.append(close));
+			count = !count;
+		}
+	});
+	return $('<div />').append(text, div);
 }
