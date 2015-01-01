@@ -87,6 +87,7 @@ var appSettings = {
 		'temperature': {
 			'id': 'temperature',
 			'type': 'slider',
+			'suffix': '&deg;c',
 			'value': 23,
 			'start': 15,
 			'end': 27
