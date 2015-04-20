@@ -1,37 +1,58 @@
+<!DOCTYPE html>
 <html>
 <head>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-</head>
-<body style="font-family: 'Courier New', Courier, monospace;">
-<script type="text/javascript" >
+<script type="text/javascript">
 function pad(number){
 	return number < 10 ? "0" + number:number;
 }
-$.getJSON('http://api.timezonedb.com/?zone=America/New_York&format=json&key=J3ZCZ1PC4YC7', function(data){
-	var status = data["status"];
-	if (status === "OK") {
-		var date = new Date(data.timestamp*1000);
-		var day = pad(date.getDate());
-		var month = pad(1 + date.getMonth());
-		var year = date.getFullYear();
-		$(document.body).append("<div style='font-size:1.2rem;font-weight:bold;'>" + year + "-" + month + "-" + day + "</div>");
-		$.ajax({
-			url: "http://live.nhle.com/GameData/GCScoreboard/" + year + "-" + month + "-" + day + ".jsonp",
-			dataType: "jsonp",
-			jsonpCallback: 'loadScoreboard',
-			success: function(data) {
+function printGames(date){
+	var todaylink = date.getFullYear()+"-"+pad(1 + date.getMonth())+"-"+pad(date.getDate());
+	var pastdate = new Date(date.getTime()-86000000);
+	var nextdate = new Date(date.getTime()+86000000);
+	var pastlink = pastdate.getFullYear()+"-"+pad(pastdate.getMonth()+1)+"-"+pad(pastdate.getDate());
+	var nextlink = nextdate.getFullYear()+"-"+pad(nextdate.getMonth()+1)+"-"+pad(nextdate.getDate());
+	$("#navigation").html(
+		"<a style='text-decoration:none;color:black;' href='?"+pastlink+"'>&lt;&lt;</a>"+
+		"<span style='font-size:1.2rem;font-weight:bold;'> "+todaylink+" </span>"+
+		"<a style='text-decoration:none;color:black;' href='?"+nextlink+"'>&gt;&gt;</a>");
+	var timer = window.setTimeout(function(){
+    	$('#games').html('<p>Could not load game data. <a style="color:black;" href="?'+todaylink+'">Try again</a>.</p>');
+	},2000);
+	$.ajax({
+		url: "http://live.nhle.com/GameData/GCScoreboard/"+todaylink+".jsonp",
+		dataType: "jsonp",
+		jsonpCallback: 'loadScoreboard',
+		success: function(data) {
+			window.clearTimeout(timer);
+			$("#games").empty();
+			if(data.games.length < 1){
+				$("#games").html("<p>No games for this date.</p>");
+			} else {
 				$.each(data.games, function(i, v){
-					$(document.body).append(v.bs + " EDT " + v.ata + "@" + v.hta + ": " + v.id + "</br>");
+					$("#games").append(v.ata+"@"+v.hta+": "+v.id+"<br />");
 				});
-        	},
-        	fail: function(error){
-        		$(document.body).append("Could not get data.")
-        	}
-    	});
-	} else{
-		$(document.body).append("Could not get date.")
-	};
-});
+			}
+		}
+	});
+}
+function loadPage(){
+	var url = window.location.href;
+	var para = url.substring(url.indexOf("?") + 1, url.length);
+	var date = new Date(para);
+	if (!isNaN(date.getTime()) && para.length > 0){
+		printGames(date);
+	}
+	else{
+		$.getJSON('http://api.timezonedb.com/?zone=America/New_York&format=json&key=J3ZCZ1PC4YC7', function(data){
+			date = new Date(data.timestamp*1000);
+			window.location.href = "?" + date.getFullYear() + "-" + pad(1 + date.getMonth()) + "-" + pad(date.getDate());
+		});
+	}
+}
 </script>
+</head>
+<body onload="loadPage()" style="font-family: 'Courier New', Courier, monospace;">
+<div style="height:1.8rem;" id="navigation"></div><div id="games"><p>Loading...</p></div>
 </body>
 </html>
