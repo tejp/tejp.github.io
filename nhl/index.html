@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body style="font-family: 'Courier New', Courier, monospace;">
+<script type="text/javascript" >
+function pad(number){
+	return number < 10 ? "0" + number:number;
+}
+$.getJSON('http://api.timezonedb.com/?zone=America/New_York&format=json&key=J3ZCZ1PC4YC7', function(data){
+	var date = new Date(data["timestamp"]*1000);
+	var day = pad(date.getDate());
+	var month = pad(1 + date.getMonth());
+	var year = date.getFullYear();
+	var status = data["status"];
+	if (status === "OK") {
+		$.ajax({
+			url: "http://live.nhle.com/GameData/GCScoreboard/" + year + "-" + month + "-" + day + ".jsonp",
+			dataType: "jsonp",
+			jsonpCallback: 'loadScoreboard',
+			success: function(data) {
+				$.each(data.games, function(i, v){
+					$(document.body).append(v.bs + " EDT " + v.ata + "@" + v.hta + ": " + v.id + "</br>");
+				});
+        	},
+        	fail: function(error){
+        		$(document.body).append("Could not get data.")
+        	}
+    	});
+	} else{
+		$(document.body).append("Could not get date.")
+	};
+});
+</script>
+</body>
+</html>
