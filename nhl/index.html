@@ -17,7 +17,7 @@ function printGames(date){
 		"<span style='font-size:1.2rem;font-weight:bold;'> "+todaylink+" </span>"+
 		"<a style='text-decoration:none;color:black;' href='?"+nextlink+"'>&gt;&gt;</a>");
 	var timer = window.setTimeout(function(){
-    	$('#games').html('<p>Could not load game data. <a style="color:black;" href="?'+todaylink+'">Try again</a>.</p>');
+    	$('#games').html('<p>Could not fetch game data. <a style="color:black;" href="?'+todaylink+'">Try again</a>.</p><p>Possible reasons:<br /> - No games scheduled for this date.<br /> - API is not available.</p>');
 	},2000);
 	$.ajax({
 		url: "http://live.nhle.com/GameData/GCScoreboard/"+todaylink+".jsonp",
@@ -27,7 +27,7 @@ function printGames(date){
 			window.clearTimeout(timer);
 			$("#games").empty();
 			if(data.games.length < 1){
-				$("#games").html("<p>No games for this date.</p>");
+				$("#games").html("<p>No games scheduled for this date.</p>");
 			} else {
 				$.each(data.games, function(i, v){
 					$("#games").append(v.ata+"@"+v.hta+": "+v.id+"<br />");
@@ -44,9 +44,19 @@ function loadPage(){
 		printGames(date);
 	}
 	else{
-		$.getJSON('http://api.timezonedb.com/?zone=America/New_York&format=json&key=J3ZCZ1PC4YC7', function(data){
-			date = new Date(data.timestamp*1000);
-			window.location.href = "?" + date.getFullYear() + "-" + pad(1 + date.getMonth()) + "-" + pad(date.getDate());
+		$.ajax({
+			url: 'http://api.timezonedb.com/?zone=America/New_York&format=json&key=J3ZCZ1PC4YC7',
+			dataType: 'json',
+			success: function(data){
+				date = new Date(data.timestamp*1000);
+				window.location.href = "?" + date.getFullYear() + "-" + pad(1 + date.getMonth()) + "-" + pad(date.getDate());
+			},
+			error: function(data){
+				date = new Date();
+				offset = (date.getTimezoneOffset()-240)*60000;
+				edtdate = new Date(date.getTime()+offset);
+				window.location.href = "?" + edtdate.getFullYear() + "-" + pad(1 + edtdate.getMonth()) + "-" + pad(edtdate.getDate());
+			}
 		});
 	}
 }
