@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript">
+
+function initialize() {
+  var russia = new google.maps.LatLng(55,103);
+  var minZoomLevel = 3;
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: russia,
+    zoom: minZoomLevel,
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  });
+
+  var heatMapData = [];
+
+  $.getJSON('./monotowns.json', function(towns){
+    $.each(towns, function(i, v){
+      LatLng = new google.maps.LatLng(v[2], v[3]);
+      heatMapData.push({location: LatLng, weight: Math.log10(v[1])/5});
+    });
+  });
+
+  google.maps.event.addListener(map, 'zoom_changed', function() {
+    if (map.getZoom() < minZoomLevel) map.setZoom(minZoomLevel);
+  });
+
+  var heatmap = new google.maps.visualization.HeatmapLayer({
+    data: heatMapData
+  });
+  heatmap.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+<div id="map-canvas"></div>
+</body>
+</html>
