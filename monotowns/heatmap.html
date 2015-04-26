@@ -21,7 +21,7 @@ function initialize() {
 
   var heatMapData = [];
 
-  $.getJSON('./monotowns.json', function(towns){
+  $.getJSON('./monotowns_sorted.json', function(towns){
     $.each(towns, function(i, v){
       LatLng = new google.maps.LatLng(v[2], v[3]);
       heatMapData.push({location: LatLng, weight: Math.log10(v[1])/5});
