@@ -1,0 +1,18 @@
+.russia {
+	fill: #F3F3F0;
+	stroke: #000;
+	stroke-width: 0.25px;
+}
+.world {
+	fill: #EEE;
+	stroke: #BBB;
+	stroke-width: 0.25px;
+}
+.mygraticule {
+	stroke: #555;
+	stroke-width: 0.2px;
+}
+.railroads {
+	stroke: none;
+	fill: "#000";
+}

@@ -1,0 +1,37 @@
+{
+  "layers": [{
+    "id": "mygraticule",
+    "special": "graticule",
+    "latitudes": 5,
+    "longitudes": 20
+  },{
+    "id": "world",
+    "src": "./../shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp",
+    "filter": ["ISO_A3", "is not", "RUS"],
+    "attributes": {
+      "iso": "ISO_A3"
+    }
+  },{
+    "id": "russia",
+    "src": "./../shapefiles/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp",
+    "filter": { "ISO_A3": "RUS" },
+    "join": true
+  }],
+  "proj": {
+    "id": "lcc",
+    "lon0": 100,
+    "lat0": 65,
+    "lat1": 90,
+    "lat2": 50
+  },
+  "bounds": {
+    "mode": "polygons",
+    "data": {
+      "layer": "russia"
+    },
+    "padding": 0.02
+  },
+  "export": {
+    "round": 1
+  }
+}

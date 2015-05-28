@@ -1,0 +1,152 @@
+Petrovskiy	#	Ivanovo Oblast	#	4 283	#	1
+Yuzha	#	Ivanovo Oblast	#	13 944	#	1
+Kameshkovo	#	Vladimir Oblast	#	12 731	#	1
+Uralskiy	#	Perm Krai	#	8 014	#	1
+Muyezerskiy	#	Republic of Karelia	#	3 034	#	1
+Pestovo	#	Novgorod Oblast	#	15 824	#	1
+Belaya Berezka	#	Brjansk Oblast	#	6 001	#	1
+Zapadnaya Dvina	#	Tver Oblast	#	8 630	#	1
+Kizema 	#	Arkhangelsk Oblast	#	2 698	#	1
+Luza	#	Kirov Oblast	#	11 878	#	1
+Pudozh	#	Republic of Karelia	#	10 520	#	1
+Onega	#	Arkhangelsk Oblast	#	20 284	#	1
+Baykalsk	#	Irkutsk Oblast	#	13 721	#	1
+Selenginsk 	#	Buryatia	#	14 126	#	1
+Pitkyaranta	#	Republic of Karelia	#	11 224	#	1
+Kuvshinovo 	#	Tver Oblast	#	9 574	#	1
+Kondopoga	#	Republic of Karelia	#	32 279	#	1
+Suoyarvi	#	Republic of Karelia	#	9 270	#	1
+Verkhnedneprovskiy 	#	Smolensk Oblast	#	12 392	#	1
+Kirovsk	#	Murmansk Oblast	#	29 878	#	1
+Dalnegorsk 	#	Primorsky Krai	#	44 446	#	1
+Sazonovo	#	Vologda Oblast	#	3 075	#	1
+Velikooktyabrskiy 	#	Tver Oblast	#	2 335	#	1
+Kurlovo	#	Vladimir Oblast	#	6 378	#	1
+Spirovo	#	Tver Oblast	#	5 979	#	1
+Pikalyovo	#	Leningrad Oblast	#	20 864	#	1
+Kamensk-Uralskiy 	#	Sverdlovsk Oblast	#	173 316	#	1
+Shelekhov	#	Irkutsk Oblast	#	46 775	#	1
+Yaroslavskiy	#	Primorsky Krai	#	10 549	#	1
+Novotroitsk 	#	Orenburg Oblast	#	100 758	#	1
+Asha	#	Chelyabinsk Oblast	#	30 714	#	1
+Kuvandyk 	#	Orenburg Oblast	#	24 990	#	1
+Tyoplaya Gora	#	Perm Krai	#	3 025	#	1
+Karabash 	#	Chelyabinsk Oblast	#	12 140	#	1
+Cherepovets	#	Vologda Oblast	#	316 758	#	1
+Verkhniy Ufaley	#	Chelyabinsk Oblast	#	33 366	#	1
+Krasnoturyinsk	#	Sverdlovsk Oblast	#	64 120	#	1
+Nytva	#	Perm Krai	#	19 624	#	1
+Pervouralsk	#	Sverdlovsk Oblast	#	149 580	#	1
+Nadvoitsy	#	Republic of Karelia	#	8 057	#	1
+Chusovoy	#	Perm Krai	#	50 451	#	1
+Kirs	#	Kirov Oblast	#	10 809	#	1
+Vyatskiye Polyany	#	Kirov Oblast	#	33 584	#	1
+Yurga	#	Kemerovo Oblast	#	81 446	#	1
+Belaya Kholunitsa	#	Kirov Oblast	#	11 751	#	1
+Ochyor	#	Perm Krai	#	14 051	#	1
+Karpinsk 	#	Sverdlovsk Oblast	#	30 891	#	1
+Kamskie Polyany	#	Tatarstan	#	15 774	#	1
+Nyazepetrovsk	#	Chelyabinsk Oblast	#	12 098	#	1
+Kaspiysk	#	Dagestan	#	105 106	#	1
+Belebey	#	Bashkortostan	#	59 533	#	1
+Kumertau	#	Bashkortostan	#	66 159	#	1
+Zelenodolsk	#	Tatarstan	#	98 120	#	1
+Ust-Katav	#	Chelyabinsk Oblast	#	26 285	#	1
+Gavrilov-Yam	#	Yaroslavl Oblast	#	17 468	#	1
+Kanash	#	Chuvash Republic	#	45 819	#	1
+Pesochnoe	#	Yaroslavl Oblast	#	2 505	#	1
+Raychikhinsk	#	Amur Oblast	#	20 865	#	2
+Gukovo	#	Rostov Oblast	#	65 264	#	2
+Chegdomyn	#	Khabarovsk Krai	#	13 425	#	2
+Anzhero-Sudzhensk	#	Kemerovo Oblast	#	80 248	#	2
+Prokopyevsk	#	Kemerovo Oblast	#	202 672	#	2
+Revda	#	Murmansk Oblast	#	7 979	#	2
+Krasnovishersk 	#	Perm Krai	#	16 362	#	2
+Severouralsk	#	Sverdlovsk Oblast	#	42 619	#	2
+Zhireken 	#	Zabaykalsky Krai	#	4 673	#	2
+Pervomayskiy	#	Zabaykalsky Krai	#	11 536	#	2
+Salair	#	Kemerovo Oblast	#	8 171	#	2
+Tashtagol	#	Kemerovo Oblast	#	22 953	#	2
+Svetlogorye 	#	Primorsky Krai	#	1 622	#	2
+Krasny Yar	#	Omsk Oblast	#	5 240	#	3
+Znamenka	#	Tambov Oblast	#	6 205	#	3
+Lebedyan	#	Lipetsk Oblast	#	20 241	#	3
+Knyaginino	#	Nizhny Novgorod Oblast	#	7 214	#	3
+Urzhum 	#	Kirov Oblast	#	10 080	#	3
+Reshetikha 	#	Nizhny Novgorod Oblast	#	6 889	#	3
+Donetsk	#	Rostov Oblast	#	49 170	#	3
+Privolzhsk	#	Ivanovo Oblast	#	16 358	#	3
+Mukhtolovo	#	Nizhny Novgorod Oblast	#	4 957	#	3
+Zheshart	#	The Komi Republic	#	7 872	#	3
+Inza	#	Ulyanovsk Oblast	#	18 416	#	3
+Sokol	#	Vologda Oblast	#	37 723	#	3
+Ust-Ilimsk	#	Irkutsk Oblast	#	83 635	#	3
+Syasstroy	#	Leningrad Oblast	#	14 292	#	3
+Balakhna	#	Nizhny Novgorod Oblast	#	50 107	#	3
+Nizhnekamsk	#	Tatarstan	#	235 706	#	3
+Novocheboksarsk	#	Chuvash Republic	#	124 288	#	3
+Pervomayskiy	#	Tula Oblast	#	9 597	#	3
+Kotovsk	#	Tambov Oblast	#	31 220	#	3
+Chapaevsk	#	Samara Oblast	#	72 410	#	3
+Seltso 	#	Brjansk Oblast	#	17 140	#	3
+Mendeleevsk	#	Tatarstan	#	22 131	#	3
+Nevinnomissk	#	Stavropol'skiy krai	#	117 638	#	3
+Blagoveshchensk 	#	Bashkortostan	#	34 883	#	3
+Rossosh	#	Voronezh Oblast	#	62 538	#	3
+Kirovo-Chepetsk	#	Kirov Oblast	#	75 963	#	3
+Novoulyanovsk	#	Ulyanovsk Oblast	#	19 292	#	3
+Komsomolskiy	#	Mordovia	#	13 093	#	3
+Silikatnyy	#	Ulyanovsk Oblast	#	3 304	#	3
+Teploozersk	#	Jewish Autonomous Oblast	#	5 138	#	3
+Strizhi	#	Kirov Oblast	#	3 528	#	3
+Nikolsk	#	Penza Oblast	#	22 103	#	3
+Volsk	#	Saratov Oblast	#	91 056	#	3
+Uglovka	#	Novgorod Oblast	#	2 717	#	3
+Stavrovo	#	Vladimir Oblast	#	7 727	#	3
+Borovichi	#	Novgorod Oblast	#	52 687	#	3
+Mednogorsk	#	Orenburg Oblast	#	28 141	#	3
+Verkhnyaya Pishma	#	Sverdlovsk Oblast	#	77 964	#	3
+Beloretsk	#	Bashkortostan	#	66 939	#	3
+Magnitogorsk	#	Chelyabinsk Oblast	#	414 897	#	3
+Polevskoy 	#	Sverdlovsk Oblast	#	70 704	#	3
+Glazov	#	The Udmurt Republic	#	94 909	#	3
+Novokuznetsk	#	Kemerovo Oblast	#	550 213	#	3
+Revda	#	Sverdlovsk Oblast	#	63 594	#	3
+Vyksa	#	Nizhny Novgorod Oblast	#	83 881	#	3
+Kolchugino	#	Vladimir Oblast	#	44 918	#	3
+Kulebaki	#	Nizhny Novgorod Oblast	#	34 142	#	3
+Lyubokhna	#	Bryansk Oblast	#	6 215	#	3
+Trekhgornyy	#	Chelyabinsk Oblast	#	32 789	#	3
+Turgenevo	#	Mordovia	#	4 985	#	3
+Vyazniki	#	Vladimir Oblast	#	43 957	#	3
+Plekhanovo	#	Tula Oblast	#	9 165	#	3
+Vichuga	#	Ivanovo Oblast	#	36 100	#	3
+Pervomaysk	#	Nizhny Novgorod Oblast	#	19 370	#	3
+Vargashinskiy possovet	#	Kurgan Oblast	#	9 196	#	3
+Klintsi	#	Bryansk Oblast	#	69 593	#	3
+Galich	#	Kostroma Oblast	#	16 934	#	3
+Neftekamsk	#	Bashkortostan	#	135 885	#	3
+Tolyatti	#	Samara Oblast	#	718 127	#	3
+Naberezhnye Chelny	#	Tatarstan	#	522 048	#	3
+Pavlovo	#	Nizhny Novgorod Oblast	#	59 029	#	3
+Navashino	#	Nizhny Novgorod Oblast	#	15 521	#	3
+Novoaltaysk	#	Altai Krai	#	70 988	#	3
+Vorsma	#	Nizhny Novgorod Oblast	#	10 989	#	3
+Elatma	#	Ryazan Oblast	#	3 393	#	3
+Sagan-Nur	#	Buryatia	#	4 035	#	4
+Kaltan	#	Kemerovo Oblast	#	31 403	#	4
+Inta	#	The Komi Republic	#	31 344	#	4
+Vorkuta	#	The Komi Republic	#	84 707	#	4
+Lipovtsi	#	Primorsky Krai	#	7 045	#	4
+Gay	#	Orenburg Oblast	#	37 123	#	4
+Zheleznogorsk-Ilimskiy	#	Irkutsk Oblast	#	24 505	#	4
+Vershina Tei	#	Khakassia 	#	3 583	#	4
+Uchaly	#	Bashkortostan	#	37 681	#	4
+Pevek	#	Chukotka Autonomous Okrug	#	4 913	#	4
+Gubkin	#	Belgorod Oblast	#	120 577	#	4
+Aykhal	#	The Sakha Republic (Yakutia)	#	13 459	#	4
+Belogorsk	#	Kemerovo Oblast	#	2 898	#	4
+Mirny	#	The Sakha Republic (Yakutia)	#	34 652	#	4
+Asbest	#	Sverdlovsk Oblast	#	69 192	#	4
+Malysheva	#	Sverdlovsk Oblast	#	10 868	#	4
+Pavlovsk	#	Voronezh Oblast	#	25 148	#	4

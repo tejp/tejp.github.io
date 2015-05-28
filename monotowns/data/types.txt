@@ -1,0 +1,310 @@
+Raychikhinsk	#	Amur Oblast	#	5
+Svobodnyy	#	Amur Oblast	#	49
+Volodarsk	#	Nizhny Novgorod Oblast	#	1
+Belogorsk	#	Amur Oblast	#	42
+Krasavino 	#	Vologda Oblast	#	35
+Gusinoozersk 	#	Buryatia	#	35
+Petukhovo	#	Kurgan Oblast	#	30
+Dalmatovo	#	Kurgan Oblast	#	29
+Kataysk 	#	Kurgan Oblast	#	28
+Monchegorsk 	#	Murmansk Oblast	#	24
+Nikel	#	Murmansk Oblast	#	24
+Zapolyarnyy	#	Murmansk Oblast	#	24
+Zavolzhye	#	Nizjnij Novgorod	#	27
+Krasnofarfornyy	#	Novgorod Oblast	#	32
+Parfino	#	Novgorod Oblast	#	16
+Linevo	#	Novosibirsk Oblast	#	27
+Gornyy	#	Novosibirsk Oblast	#	23
+Mtsensk 	#	Oryol Oblast	#	25, 29
+Serdobsk 	#	Penza Oblast	#	29
+Zarechnyy	#	Penza Oblast	#	26
+Gornozavodsk	#	Perm Krai	#	23
+Aleksandrovsk	#	Perm Krai	#	28
+Pashiya	#	Perm Krai	#	23, 25
+Yugo-Kamskiy	#	Perm Krai	#	28
+Arsenyev	#	Primorsky Krai	#	30
+Spassk-Dalniy	#	Primorsky Krai	#	23
+Kamensk	#	Buryatia	#	23
+Dagestanskiye Ogni	#	Dagestan	#	23
+Segezha	#	Karelia	#	17
+Pindushi	#	Karelia	#	16
+Lakhdenpokhya	#	Karelia	#	16
+Vyartsilya	#	Karelia	#	25
+Yemva	#	 Komi Republic	#	16
+Umet	#	Mordovia	#	16
+Ruzaevka	#	Mordovia	#	30
+Kadoshkino	#	Mordovia	#	27
+Atyashevo	#	Mordovia	#	10
+Mokhsogollokh	#	 Sakha Republic 	#	23
+Elabuga	#	Tatarstan	#	29
+Tuim	#	Khakassia 	#	24
+Sayanogorsk	#	Khakassia 	#	24
+Skopin 	#	Ryazan Oblast	#	29
+Petrovsk 	#	Saratov Oblast	#	26
+Verkhnyaya Tura	#	Sverdlovsk Oblast	#	25
+Serov	#	Sverdlovsk Oblast	#	24
+Verkhnyaya Salda	#	Sverdlovsk Oblast	#	24
+Zharkovskiy	#	Tver Oblast	#	16
+Likhoslavl	#	Tver Oblast	#	27
+Seversk	#	Tomsk Oblast	#	20
+Aleksin	#	Tula Oblast	#	24
+Efremov	#	Tula Oblast	#	20
+Votkinsk 	#	 Udmurt Republic	#	30
+Sarapul	#	 Udmurt Republic	#	30
+Elban	#	Khabarovsk Krai	#	20
+Minyar	#	Chelyabinsk Oblast	#	25
+Sim	#	Chelyabinsk Oblast	#	30
+Satka	#	Chelyabinsk Oblast	#	23
+Ozersk	#	Chelyabinsk Oblast	#	25
+Miass	#	Chelyabinsk Oblast	#	29, 30
+Zlatoust	#	Chelyabinsk Oblast	#	24
+Chebarkul	#	Chelyabinsk Oblast	#	25
+Alatyr	#	 Chuvash Republic	#	27, 29
+Shumerlya	#	 Chuvash Republic	#	30
+Mariinskiy Posad	#	 Chuvash Republic	#	10
+Rostov	#	Yaroslavl Oblast	#	26
+Tutaev	#	Yaroslavl Oblast	#	29
+Seltso 	#	Brjansk Oblast	#	20
+Lyubokhna	#	Bryansk Oblast	#	25
+Stavrovo	#	Vladimir Oblast	#	23
+Kolchugino	#	Vladimir Oblast	#	25
+Vyazniki	#	Vladimir Oblast	#	27
+Sokol	#	Vologda Oblast	#	16, 17
+Rossosh	#	Voronezh Oblast	#	20
+Teploozersk	#	 Jewish Autonomous oblast'	#	23
+Vichuga	#	Ivanovo Oblast	#	28
+Privolzhsk	#	Ivanovo Oblast	#	13
+Ust-Ilimsk	#	Irkutsk Oblast	#	17
+Novokuznetsk	#	Kemerovo Oblast	#	24
+Urzhum 	#	Kirov Oblast	#	11
+Kirovo-Chepetsk	#	Kirov Oblast	#	20
+Strizhi	#	Kirov Oblast	#	23
+Galich	#	Kostromskaya oblast'	#	28
+Vargashi	#	Kurgan Oblast	#	28
+Syasstroy	#	Leningrad Oblast	#	17
+Lebedyan	#	Lipetskaya oblast'	#	10
+Balakhna	#	Nizhny Novgorod Oblast	#	17
+Kulebaki	#	Nizhny Novgorod Oblast	#	25
+Knyaginino	#	Nizjnij Novgorod Oblast	#	10
+Pavlovo	#	Nizhny Novgorod Oblast	#	29
+Pervomaysk	#	Nizhny Novgorod Oblast	#	28
+Vorsma	#	Nizhny Novgorod Oblast	#	32
+Mukhtolovo	#	Nizhny Novgorod Oblast	#	14
+Reshetikha 	#	Nizjnij Novgorod Oblast	#	13
+Vyksa	#	Nizjnij Novgorod Oblast	#	24, 30
+Navashino	#	Nizhny Novgorod Oblast	#	30
+Uglovka	#	Novgorod Oblast	#	23
+Borovichi	#	Novgorod Oblast	#	23
+Krasny Yar	#	Omskaya oblast'	#	10
+Mednogorsk	#	Orenburg Oblast	#	24
+Nikolsk	#	Penza Oblast	#	23
+Neftekamsk	#	Bashkortostan	#	29
+Blagoveshchensk 	#	Bashkortostan	#	20
+Beloretsk	#	Bashkortostan	#	24
+Zheshart	#	 Komi Republic	#	16
+Turgenevo	#	Mordovia	#	27
+Komsomolskiy	#	Mordovia	#	23
+Mendeleevsk	#	Tatarstan	#	20
+Nizhnekamsk	#	Tatarstan	#	20
+Naberezhnye Chelny	#	Tatarstan	#	29
+Donetsk	#	Rostov Oblast	#	13
+Elatma	#	Ryazan Oblast	#	32
+Chapaevsk	#	Samara Oblast	#	20
+Volsk	#	Saratov Oblast	#	23
+Polevskoy 	#	Sverdlovsk Oblast	#	24
+Revda	#	Sverdlovsk Oblast	#	23, 24
+Verkhnyaya Pishma	#	Sverdlovsk Oblast	#	24
+Nevinnomissk	#	Stavropol'skiy krai	#	20
+Znamenka	#	Tambov Oblast	#	10
+Kotovsk	#	Tambov Oblast	#	20
+Plekhanovo	#	Tula Oblast	#	28
+Pervomayskiy	#	Tula Oblast	#	20
+Glazov	#	 Udmurt Republic	#	24
+Novoulyanovsk	#	Ulyanovsk Oblast	#	23
+Inza	#	Ulyanovsk Oblast	#	16, 23
+Silikatnyy	#	Ulyanovsk Oblast	#	23
+Magnitogorsk	#	Chelyabinsk Oblast	#	24
+Trekhgornyy	#	Chelyabinsk Oblast	#	26
+Novocheboksarsk	#	 Chuvash Republic	#	20
+Kizema 	#	Arkhangelsk Oblast	#	16
+Onega	#	Arkhangelsk Oblast	#	16
+Belaya Berёzka	#	Brjansk Oblast	#	16
+Kameshkovo	#	Vladimir Oblast	#	14
+Kurlovo	#	Vladimir Oblast	#	23
+Sazonovo	#	Vologda Oblast	#	24
+Cherepovets	#	Vologda Oblast	#	24
+Petrovskiy	#	Ivanovo Oblast	#	11
+Yuzha	#	Ivanovo Oblast	#	13
+Baykalsk	#	Irkutsk Oblast	#	17
+Shelekhov	#	Irkutsk Oblast	#	24
+Yurga	#	Kemerovo Oblast	#	28
+Luza	#	Kirov Oblast	#	16
+Vyatskiye Polyany	#	Kirov Oblast	#	25
+Kirs	#	Kirov Oblast	#	25
+Belaya Kholunitsa	#	Kirov Oblast	#	28
+Pikalyovo	#	Leningrad Oblast	#	20, 23
+Kirovsk	#	Murmansk Oblast	#	20
+Pestovo	#	Novgorod Oblast	#	16
+Kuvandyk 	#	Orenburg Oblast	#	24
+Novotroitsk 	#	Orenburg Oblast	#	24
+Tyoplaya Gora	#	Perm Krai	#	24
+Nytva	#	Perm Krai	#	24
+Ochyor	#	Perm Krai	#	28
+Chusovoy	#	Perm Krai	#	25
+Uralskiy	#	Perm Krai	#	16
+Yaroslavskiy	#	Primorsky Krai	#	24
+Dalnegorsk 	#	Primorsky Krai	#	20
+Belebey	#	Bashkortostan	#	29
+Kumertau	#	Bashkortostan	#	30
+Selenginsk 	#	Buryatia	#	17
+Kaspiysk	#	Dagestan	#	26, 28
+Nadvoitsy	#	Karelia	#	24
+Pudozh	#	Karelia	#	16
+Muyezerskiy	#	Karelia	#	16
+Pitkyaranta	#	Karelia	#	17
+Kondopoga	#	Karelia	#	17
+Suoyarvi	#	Karelia	#	17
+Kamskie Polyany	#	Tatarstan	#	28
+Zelenodolsk	#	Tatarstan	#	30
+Krasnoturyinsk	#	Sverdlovsk Oblast	#	24
+Karpinsk 	#	Sverdlovsk Oblast	#	28
+Kamensk-Uralskiy 	#	Sverdlovsk Oblast	#	24
+Pervouralsk	#	Sverdlovsk Oblast	#	24
+Verkhnedneprovskiy 	#	Smolensk Oblast	#	20
+Spirovo	#	Tver Oblast	#	23
+Velikooktyabrskiy 	#	Tver Oblast	#	23
+Zapadnaya Dvina	#	Tver Oblast	#	16
+Kuvshinovo 	#	Tver Oblast	#	17
+Ust-Katav	#	Chelyabinsk Oblast	#	30
+Nyazepetrovsk	#	Chelyabinsk Oblast	#	28
+Verkhniy Ufaley	#	Chelyabinsk Oblast	#	24
+Karabash 	#	Chelyabinsk Oblast	#	24
+Asha	#	Chelyabinsk Oblast	#	24
+Kanash	#	 Chuvash Republic	#	29, 30
+Pesochnoe	#	Yaroslavl Oblast	#	32
+Gavrilov-Yam	#	Yaroslavl Oblast	#	30
+Zarinsk 	#	Altai Krai	#	19
+Aleysk 	#	Altai Krai	#	10
+Yarovoye 	#	Altai Krai	#	20
+Stepnoye Ozero	#	Altai Krai	#	20
+Severodvinsk	#	Arkhangelsk Oblast	#	30
+Oktyabrskiy	#	Arkhangelsk Oblast	#	16
+Novodvinsk 	#	Arkhangelsk Oblast	#	17
+Koryazhma	#	Arkhangelsk Oblast	#	17
+Surazh	#	Bryansk Oblast	#	17
+Fokino	#	Bryansk Oblast	#	23
+Karachev	#	Brjansk Oblast	#	10
+Pogar	#	Bryansk Oblast	#	12
+Bytosh	#	Bryansk Oblast	#	23
+Ivot	#	Bryansk Oblast	#	23
+Melenki	#	Vladimir Oblast	#	24
+Gorokhovets	#	Vladimir Oblast	#	10
+Frolovo	#	Volgograd Oblast	#	24
+Mikhaylovka	#	Volgograd Oblast	#	23
+Semiluki	#	Voronezh Oblast	#	23
+Elan-Kolenovskiy	#	Voronezh Oblast	#	10
+Kokuy	#	Zabaykalsky Krai	#	30
+Novopavlovka	#	Zabaykalsky Krai	#	31
+Kolobovo	#	Ivanovo Oblast	#	13
+Savino	#	Ivanovo Oblast	#	10
+Navoloki	#	Ivanovo Oblast	#	13
+Furmanov	#	Ivanovo Oblast	#	13
+Teykovo	#	Ivanovo Oblast	#	13
+Kamenka	#	Ivanovo Oblast	#	13
+Tulun	#	Irkutsk Oblast	#	16
+Sayansk	#	Irkutsk Oblast	#	20
+Usolye-Sibirskoe 	#	Irkutsk Oblast	#	20
+Sosensky 	#	Kaluga Oblast	#	26
+Mariinsk 	#	Kemerovo Oblast	#	11
+Guryevsk 	#	Kemerovo Oblast	#	24
+Topki	#	Kemerovo Oblast	#	23
+Yashkino	#	Kemerovo Oblast	#	10
+Mundybash	#	Kemerovo Oblast	#	24
+Krasnaya Polyana	#	Kirov Oblast	#	16
+Demyanovo	#	Kirov Oblast	#	16
+Murygino	#	Kirov Oblast	#	17
+Omutninsk 	#	Kirov Oblast	#	24
+Manturovo	#	Kostroma Oblast	#	16
+Zheleznogorsk	#	Krasnoyarsk Krai	#	20, 30
+Lesosibirsk	#	Krasnoyarsk Krai	#	16
+Novoaltaysk	#	Altai Krai	#	30
+Klintsi	#	Bryansk Oblast	#	28
+Tolyatti	#	Samara Oblast	#	29
+Zelenogorsk 	#	Krasnoyarsk Krai	#	20, 35
+Zhireken 	#	Transbaikal Territory	#	7
+Pervomayskiy	#	Transbaikal Territory	#	7
+Anzhero-Sudzhensk	#	Kemerovo Oblast	#	5
+Prokopyevsk	#	Kemerovo Oblast	#	5
+Salair	#	Kemerovo Oblast	#	7
+Tashtagol	#	Kemerovo Oblast	#	7
+Revda	#	Murmansk Oblast	#	7
+Krasnovishersk 	#	Perm Krai	#	7
+Svetlogorye 	#	Primorsky Krai	#	7
+Gukovo	#	Rostov Oblast	#	5
+Severouralsk	#	Sverdlovsk Oblast	#	7
+Chegdomyn	#	Khabarovsk Krai	#	5
+Sherlovaya Gora	#	Zabaykalsky Krai	#	5
+Krasnokamensk	#	Zabaykalsky Krai	#	7
+Vershino-Darasunskiy	#	Zabaykalsky Krai	#	7
+Novoorlovsk 	#	Zabaykalsky Krai	#	7
+Cheremkhovo	#	Irkutsk Oblast	#	5
+Mednogorskiy	#	Karachayevo-Cherkesiya	#	7
+Sheregesh	#	Kemerovo Oblast	#	7
+Myski	#	Kemerovo Oblast	#	5
+Mezhdurechensk	#	Kemerovo Oblast	#	5
+Osinniki	#	Kemerovo Oblast	#	5
+Leninsk-Kuznetskiy	#	Kemerovo Oblast	#	5
+Berezovskiy	#	Kemerovo Oblast	#	5
+Polysayevo	#	Kemerovo Oblast	#	5
+Krasnobrodskiy	#	Kemerovo Oblast	#	5
+Belovo	#	Kemerovo Oblast	#	5
+Kiselyovsk	#	Kemerovo Oblast	#	5
+Borodino	#	Krasnoyarsk Krai	#	5
+Slantsy	#	Leningrad Oblast	#	8
+Susuman	#	Magadan Oblast	#	7
+Kovdor	#	Murmansk Oblast	#	7
+Olenegorsk	#	Murmansk Oblast	#	7
+Sol-Iletsk	#	Orenburg Oblast	#	8
+Yasnyy	#	Orenburg Oblast	#	8
+Novoshakhtinskiy	#	Primorsky Krai	#	5
+Vostok	#	Primorsky Krai	#	8
+Kostomuksha	#	Karelia	#	7
+Neryungri	#	 Sakha Republic	#	5
+Udachny	#	 Sakha Republic 	#	8
+Nizhniy Kuranakh	#	 Sakha Republic 	#	8
+Abaza	#	Khakassia 	#	7
+Zverevo	#	Rostov Oblast	#	5
+Bakal 	#	Chelyabinsk Oblast	#	7
+Beringovskiy	#	Chukotka Autonomous Okrug	#	5
+Gubkin	#	Belgorod Oblast	#	7
+Pavlovsk	#	Voronezh Oblast	#	8
+Zheleznogorsk-Ilimskiy	#	Irkutsk Oblast	#	7
+Kaltan	#	Kemerovo Oblast	#	5
+Belogorsk	#	Kemerovo Oblast	#	8
+Gay	#	Orenburg Oblast	#	7
+Lipovtsi	#	Primorsky Krai	#	5
+Uchaly	#	Bashkortostan	#	7
+Sagan-Nur	#	Buryatiya	#	5
+Vorkuta	#	 Komi Republic	#	5
+Inta	#	 Komi Republic	#	5
+Mirny	#	 Sakha Republic 	#	8
+Aykhal	#	 Sakha Republic 	#	8
+Vershina Tei	#	Khakassia 	#	7
+Asbest	#	Sverdlovsk Oblast	#	8
+Malysheva	#	Sverdlovsk Oblast	#	8
+Pevek	#	Chukotka Autonomous Okrug	#	7
+Sorsk	#	Khakassia 	#	7, 24
+Luchegorsk	#	Primorsky Krai	#	5, 35
+Chernogorsk 	#	Khakassia 	#	5, 28
+Volchansk	#	Sverdlovsk Oblast	#	5, 28
+Norilsk	#	Krasnoyarsk Krai	#	7, 24
+Zheleznogorsk	#	Kursk Oblast	#	7, 24
+Zakamensk	#	Buryatia	#	8, 28
+Krasnouralsk	#	Sverdlovsk Oblast	#	7, 24
+Kachkanar	#	Sverdlovsk Oblast	#	7, 24
+Nizhniy Tagil	#	Sverdlovsk Oblast	#	7, 24, 30
+Dimitrovgrad	#	Ulyanovsk Oblast	#	72
+Snezhinsk	#	Chelyabinsk Oblast	#	72
+Tayga	#	Kemerovo Oblast	#	49
+Tinda	#	Amur Oblast	#	49
+Severobaykalsk	#	Buryatiya	#	49

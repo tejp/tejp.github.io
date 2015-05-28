@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  html, body, #map-canvas { width: 8000px; height: 4000px; margin: 0; padding: 0;}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="./js/maps.js"></script>
+
+<script type="text/javascript">
+function initialize() {
+  var russia = new google.maps.LatLng(65,108); //55, 103
+  var zoomLevel = 6; //zoom 6:8000x4000
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    center: russia,
+    mapTypeId: google.maps.MapTypeId.TERRAIN,
+    draggable: false,
+    scrollwheel: false,
+    panControl: false,
+    maxZoom: zoomLevel,
+    minZoom: zoomLevel,
+    zoom: zoomLevel,
+    disableDefaultUI: true
+  });
+
+  page(map);
+}
+page = (function(){
+  var url = window.location.href;
+  var para = url.split(/[?&]+/);
+  if(para.length > 1){
+    switch (para[1]){
+      case "heatmap": return heatMap; break;
+      case "type":
+        if(para.length > 2){
+          switch (para[2]){
+            case "mining": break;
+            case "manufactoring": break;
+            default: window.location.href = "?type"
+          }
+        }
+        return typeMap;
+        break;
+      default: window.location.href = ".";
+    }
+  } else {return defaultMap}
+})()
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+<div id="map-canvas"></div>
+</body>
+</html>

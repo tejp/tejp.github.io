@@ -2,58 +2,75 @@
 <html>
 <head>
 <style type="text/css">
-  html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+  html, body, #map-canvas { margin: 0; padding: 0;}
 </style>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/kartograph.min.js"></script>
+<script src="js/raphael-min.js"></script>
+<script src="js/decorateMaps.js"></script>
 
 <script type="text/javascript">
-function initialize() {
-  var russia = new google.maps.LatLng(55,103);
-  var minZoomLevel = 3;
+var filter = (function(){
+	var url = window.location.href;
+	var para = url.split(/[?&]+/);
+	if(para.length > 1){
+		if (para[1] in filterTowns) return para[1];
+		window.location.href = ".";
+	}
+	return "all";
+})()
 
-  var map = new google.maps.Map(document.getElementById('map-canvas'), {
-    center: russia,
-    zoom: minZoomLevel,
-    mapTypeId: google.maps.MapTypeId.TERRAIN
-  });
+$(function(){
+	var map = kartograph.map('#map');
+	map.loadCSS('kartograph/config.css', function() {
+		map.loadMap('kartograph/russia_context/russia_laea.svg', function(){
+			map.addLayer('mygraticule');
+			map.addLayer('world');
+			map.addLayer('russia');
+			$.ajax({
+				url: 'data/monotowns_sorted.json',
+				dataType: 'json',
+				success: function(cities) {
+					var scale = kartograph.scale.sqrt(cities.concat([2]), [2]).range([4, 30]);
+					cities = filterTowns[filter](cities);
+					console.log("Number of towns displayed: " + cities.length);
 
-  var circles = []
-  $.getJSON('./monotowns_sorted.json', function(towns){
-    $.each(towns, function(i, v){
-      LatLng = new google.maps.LatLng(v[2], v[3]);
-      var color;
-      if(v[1] >= 500000){color='#FFFF00';}
-      else if(v[1] >= 100000 && v[1] < 500000){color='#FF8800';}
-      else if(v[1] >= 50000 && v[1] < 100000){color='#0000FF';}
-      else if(v[1] >= 10000 && v[1] < 50000){color='#00FF00';}
-      else {color='#FF0000';}
-      circles.push(new google.maps.Circle({
-        strokeColor: '#000000',
-        strokeOpacity: 0.8,
-        strokeWeight: 1,
-        fillColor: color,
-        fillOpacity: 0.55,
-        map: map,
-        center: LatLng,
-        radius: Math.sqrt(v[1]) * 300,
-        visible: false
-      }));
-    });
-    for (var i = 0; i < circles.length; i++) {
-      circles[i].setVisible(true);
-    }
-  });
-
-  google.maps.event.addListener(map, 'zoom_changed', function() {
-    if (map.getZoom() < minZoomLevel) map.setZoom(minZoomLevel);
-  });
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
+					map.addSymbols({
+						type: kartograph.Bubble,
+						data: cities,
+						location: function(city) {
+							return [city[4], city[3]];
+						},
+						radius: function(city) {
+							return scale(city[2]);
+						},
+						sortBy: 'radius desc',
+						style: function (city){
+							var style = 'fill-opacity: 0.25; stroke: #888; stroke-width:0.15;';
+							return style + 'fill: ' + city[city.length-1] + ';';
+						}
+				 	});
+				  map.addSymbols({
+						type: kartograph.Bubble,
+						data: cities,
+						location: function(city) {
+							return [city[4], city[3]];
+						},
+						radius: 1.5,
+						sortBy: 'radius desc',
+						style: function (city){
+							var style = 'stroke: #fff; stroke-width:0.15;';
+							return style + ';fill: ' + city[city.length-1] + ';';
+						}
+					});
+				}
+			});
+		});
+	});
+})
 </script>
 </head>
 <body>
-<div id="map-canvas"></div>
+<div id="map"></div>
 </body>
 </html>
