@@ -20,7 +20,7 @@ const FILTER_COLORS = {
 	"manufacturing": ["#2a00ff","#ff8000","#F00","#d4db00","#FF80FB","#50b300","#00d9bf","#8a3704","#AA00FF"],
 	"mining": ["#1a1","#11a","#a11"],
 	"others": ["#11d","#ff8000","#a11","#1a1","#FF80FB"],
-	"taxonomi": ["#3399FF","#FF3300","#000099","#990000"]
+	"taxonomi": ["#3399FF","#FF45F3","#00e","#b00"]
 }
 
 var containsAny = function(source,target){

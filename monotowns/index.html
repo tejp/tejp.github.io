@@ -2,7 +2,7 @@
 <html>
 <head>
 <style type="text/css">
-  html, body, #map-canvas { margin: 0; padding: 0;}
+	html, body, #map { margin: 0; padding: 0;}
 </style>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/kartograph.min.js"></script>
@@ -10,15 +10,37 @@
 <script src="js/decorateMaps.js"></script>
 
 <script type="text/javascript">
+var url = window.location.href;
+var paras = url.split(/[?&]+/);
+
 var filter = (function(){
-	var url = window.location.href;
-	var para = url.split(/[?&]+/);
-	if(para.length > 1){
-		if (para[1] in filterTowns) return para[1];
-		window.location.href = ".";
+	if(paras.length > 1){
+		for(i = 1; i < paras.length; i++){
+			if(paras[i] in filterTowns) return paras[i];
+		}
 	}
 	return "all";
-})()
+})();
+
+$(document).ready(function loadNav(){
+	if($.inArray("nonav", paras) === -1){
+		console.log("Append '?nonav' to the url to load the page without navigation.")
+		var nav = $("<div />",{
+			'style': 'position: fixed; z-index:1000;font-family:monospace;background-color:rgba(255,255,255,0.7);' +
+				'padding:0.4rem; font-size:1.1rem;',
+			'text': "Click to change the map:"
+		}).insertBefore('#map');
+		for(key in filterTowns){
+			if(key !== filter){
+				$("<a />",{
+					'href': '?' + key,
+					'style': 'color:black; margin-left: 1rem;',
+					'text': key
+				}).appendTo(nav);
+			}
+		}
+	}
+});
 
 $(function(){
 	var map = kartograph.map('#map');
@@ -35,7 +57,7 @@ $(function(){
 					cities = filterTowns[filter](cities);
 					console.log("Number of towns displayed: " + cities.length);
 
-					map.addSymbols({
+					var rings = map.addSymbols({
 						type: kartograph.Bubble,
 						data: cities,
 						location: function(city) {
@@ -50,7 +72,7 @@ $(function(){
 							return style + 'fill: ' + city[city.length-1] + ';';
 						}
 				 	});
-				  map.addSymbols({
+					map.addSymbols({
 						type: kartograph.Bubble,
 						data: cities,
 						location: function(city) {

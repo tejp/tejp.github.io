@@ -1,1 +1,1 @@
-Some shit I've made at [a.ndersson.co](http://a.ndersson.co)
+Some shit I've made at [tejp.github.io](http://tejp.github.io/).
